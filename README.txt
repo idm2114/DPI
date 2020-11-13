@@ -6,7 +6,7 @@ for this task, please create a text file and commit it to the branch task0.
     echo "<yourname>" >> <yourname>.txt
     git add <yourname>.txt
     git commit -m "<write your own message here>"
-    git push
+    git push origin task0
 
 
     and git status to see what's going on at any given point in the process!
