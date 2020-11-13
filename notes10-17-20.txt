@@ -1,0 +1,98 @@
+
+
+- everyone is looking for something practical
+- find the longest substring in a string? reverse linked list? the possibilities
+are boundless!
+
+- many classes are too theory-focused
+- people feel as though the skillsets they develop in classrooms don't translate
+  to real world problems (on coding interviews, etc)
+
+
+- build something that we would actually want to use 
+- learn from each other
+
+********* PROJECT IDEAS **********
+
+- COVID-oriented population density tracker on campus (live?) 
+    - questions about implementation: could look at wifi networks for cell data
+
+- Online marketplace for businesses with diverse owners
+    - Is this transferrable to Columbia
+
+********* CURRENT PROBLEMS **********
+
+- Feels inconvenient to chat with classmates during class
+    - Very difficult to meet people on Zoom
+    - not able to connect with other people in your classes 
+    - everyone has their camera off
+    - hard to figure out if you know anyone in your class
+
+- TA help rooms
+    - places for people to help each other along with TAs 
+    - currently nonexistent in the online format
+
+- Vergil is awful (syllabi always missing, faculty reviews incorrect)
+    - algorithm that tailors class suggestions based on previous classes taken,
+    quality of professors available that semester, etc.
+
+- Extending lunch with professors into the virtual space? 
+    - apparently a violation of university fund spending
+
+********* MEETING PEOPLE AS A FRESHMAN **********
+
+- don't get to meet people outside of zoom classes often 
+- professors for some classes place people into breakout rooms to introduce
+  themselves, talk about problem sets
+- primarily academically oriented questions
+- don't often discuss personal interests / life
+    - HOW CAN WE CHANGE THIS? 
+
+- time zone difference is very inconvenient
+- difficult to figure out what one person's "sunday morning" means in a
+  different time zone
+
+********* CODING LANGUAGES PEOPLE LIKE **********
+
+Chenoa: 
+ - Java, Python, ReactJS, ExpressJS, CSS
+
+Alice:
+ - C++ (former CP coder), Java, Python
+    - editors: likes Sublime, knows VSCode
+
+Joe:
+ - Java, STATA, R
+    - editors: Jupyter Notebooks
+
+Margherita:
+ - Python, Java
+    - Spyder, trello, monday.com (as task management software)
+
+Nikhilesh: 
+ - Javascript, Flask(? may have misheard you), familiar with Python scipy
+    - Spyder
+
+Elisa:
+ - Python, Apache Spark, Pandas (lots of stats models in python), Java, C, C++
+    - Jupyter Notebook, vim
+
+Ian:
+ - Python, C++
+    - Vim, Spyder
+
+********* DELIVERABLES BEFORE NEXT MEETING **********
+
+- Template for working in Git / using Github (everyone can add their own 
+  suggestions)
+
+- Style Guide (everyone can add their own suggestions)
+
+********* STANDARD MEETING TIME **********
+
+- 9pm EST on Saturdays
+
+********* GROUPCHAT? **********
+
+- Messenger groupchat seemed like the concensus play
+- I'll create one as soon as I can find everyone on facebook
