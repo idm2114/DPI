@@ -1,0 +1,75 @@
+********* RECAP LAST WEEK *********
+
+- Did introductions, talked about project ideas mentioned last time 
+
+********* PROJECT IDEAS **********
+
+- Nikhilesh and Alice: 
+    - freshmen have a hard time meeting new people 
+    - feel alienated in some respects from the Columbia community at large
+    - NSOP friends haven't really stuck... friendships only formed around study
+    groups
+    - known need: people want to find new people with like interests and meet
+    others 
+    - tinder for friends? 
+    - based on survey that was sent out, 75% of freshmen say they don't know 
+    enough people at Columbia
+    - 40% say they don't talk to their Columbia friends they've meet online
+    - would it be more successful to match people randomly or allow them 
+    to choose to meet each other? 
+    - joe: one issue with meeting new people is the intimidating aspect of
+    making the first move, there should be some forced element that matches
+    them (akin to a nudge)
+        - could we gamify it?  
+    - provide conversation starters?
+    - currently, people only socialize around classes 
+    - zoom is currently the best of the worst options
+    - one on one vs group meetings? 
+    - ian: one problem is that people struggle to think about themselves and 
+    bond in 2020, questions like "how are you" or "what do you do for fun" 
+    become loaded
+    - marcus: forced interactions should be more than one on one, less than 5
+        - inverse correlation between num people and chattiness
+    - could provide conversation starters at random intervals if we detect
+    a lull in texting 
+    - could provide an initial survey to filter sort people into groups 
+        - people who are super productive in quarantine, people who are sad,
+        people who worked out, people who haven't, etc.
+        - goal is to find a connection that people can bond over 
+    - verging into the realm of social engineering :/
+    - key problems;
+        - how do we decide to match people together?
+            - match on tangible factors? 
+    - if prompted to join, would people actually sign up?
+    - among us as an example of a game that also facilitates social interaction
+    - joe: if we're gonna do it, we should try and build-test by next semester
+        - people most willing to try new things at the start of new semesters
+    - need to be incentivized to get involved
+    - making friends is low probability of success in the online world 
+    - issue of timing or general disinterest in the app? 
+        - concensus opinion that timing is very important in terms of deployment
+
+********* NSOP ONLINE: ALICE"S PERSPECTIVE **********
+
+- don't really feel like you're part of a big event or induction into college
+- don't feel like you're in college
+    - if you wanted to feel like you were actually in college, you would have
+    to fit into the mold of the college life you envisioned 
+    - not feeling like you're part of the bigger group
+        - if you're part of a group and something is happening, you can feel
+        it happening for the group
+        - sense of isolation around what would otherwise be group-oriented events
+
+********* NEXT STEPS **********
+
+- find a way to validate the need for this project 
+- reaching out to people in person, discussing and getting their opinions
+    - google forms is not enough; talking to people is significantly better
+- zoom calls with freshmen, understand their situation 
+- personal interviews as a more insightful way of getting feedback
+- target group is for sure freshmen
+- leaving things more open ended 
+- is the timeline too slow? viable life for the app beyond covid? 
+- mentorship between underclassmen and upperclassmen?
+- tangible next step: post in FB Class of 2024 group to try and interview freshmen
+about their experiences with Columbia so far

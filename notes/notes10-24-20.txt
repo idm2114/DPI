@@ -1,0 +1,53 @@
+********* RECAP LAST WEEK *********
+
+- Did introductions, talked about project ideas mentioned last time 
+
+********* PROJECT IDEAS **********
+
+- Schedule meetings across different time zones to account for differences
+- Implementation side: reach out to people to see what currently 
+bothers them about online learning / how we could help
+- From a data perspective, should think about how many inputs we need
+to effectively model and build our algorithm
+    - keeping in mind if we are allowed to access some data
+- Having 3-4 different platforms for registering (SSOL, Vergil, CULPA) makes
+things difficult to keep track of 
+
+********* TIME ZONE CONVERTER  **********
+
+- Automatically convert time zone to the recepients' local time
+- How do we see this being implemented? 
+- Time zone conversion during emails, text messages?
+- Chrome extension?
+    - change link to meeting link automatically? 
+    - text highlighting? show conversion on hover?
+- throw warning to user when recepients' local time doesn't make sense (i.e.3am)
+
+********* ANNOYING THINGS ON THE INTERNET **********
+
+- always having to download files on courseworks
+- switch between windows continuously for columbia homework
+- way to display multiple documents at once or flip through them easilyi
+- would be really nice to zip together and automatically download files
+for a single / for all classes
+- tons of tabs open on chrome (tab management system?) 
+    - what would this look like? chrome extension?
+    - losing track of information you know you had is infuriating
+    - highlighting and markup on websites
+- courseworks / piazza summaries don't show answers / grades, only notifications
+- autofill job applications? workday? 
+    - obvious problems with storing users passwords / encryption and security
+- can't engage with events because they are hard to find / hidden in emails
+    - would be nice to have a centralized place for them
+- be able to meet people from columbia
+    - before/after class interactions and bumpbing into people virtually obsolete
+    - did you catch my pun?
+
+********* EVERYONE DISLIKES ONLINE SCHOOL **********
+- title said it all
+
+********* NEXT STEPS **********
+- Design analysis, prototyping and more
+- Working on Zoom social interactions: Nikhilesh, Alice
+- Working on tabs and task management: Chenoa, Elisa(?)
+- Working on Courseworks: Margherita, Ian
