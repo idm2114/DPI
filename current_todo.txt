@@ -1,0 +1,32 @@
+## CURRENT TODO LIST ##
+
+overall:
+    - continue to conduct product fit interviews
+    - reach out to professors with large intro classes, try and get their
+      opinions on the idea in general / usability
+
+frontend: 
+    - begin mockups for user interface (figma, hand-drawn, whatever)
+        - consider how video vs. text oriented learning would change the
+          mockup page view
+    - 
+
+backend:
+    - construct database for holding the following information within
+      schema: 
+        - links to videos that explain concepts
+        - login information (username,password,cookie cache,etc.)
+        - ranking system(?) 
+            - this is the most nebulous at the moment, but could be as
+              simple as a points-based system (i.e. +10 points for sharing a
+              video) 
+        - class schedule information uploaded by user
+
+data science:
+
+implementation:
+    - knowing that the success of our website relies on engagement from
+      users, study user engagement strategies  
+    - what times are other ed-tech resources utilized most heavily? piazza? 
+        - would we expect the majority of our users to only engage prior to
+          midterms / finals? 
