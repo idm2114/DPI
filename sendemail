@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+  echo "Usage: ./sendemail <notes-doc> <email-list>"
+else
+     attachment=$1;
+     touch emailbody.html;
+     while read -r email; do
+         echo "<html><body><p>Hey everyone,<br><br> Here are the notes from our meeting tonight! <br><br><strong>Also, as a note, I will be using our github repo more and more this semester for storing information. We'll still use the google drive folder, but my hope is that ultimately our github repo will be the only place you'll have to reference to understand what happened in our meeting.</strong><br><br>Best,<br>Ian</p></body></html>" > emailbody.html 
+         mutt -s "DPI notes from today" -e "set content_type=text/html" -i emailbody.html $email -a $attachment
+         sleep 1
+     done < $2
+    rm emailbody.html
+fi

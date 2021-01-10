@@ -9,12 +9,18 @@ frontend:
     - begin mockups for user interface (figma, hand-drawn, whatever)
         - consider how video vs. text oriented learning would change the
           mockup page view
-    - 
+    - react (bootstrap, nodejs)  
+    - class vs user oriented interface? 
+    - high level explanations of other classes / being able to view the pages 
+    for classes that you're not in
+    - website fully open? open to columbia / non-columbia students?
+        - drawbacks of fully open: people less inclined to make videos
 
 backend:
     - construct database for holding the following information within
       schema: 
         - links to videos that explain concepts
+            - links to youtube videos that are hosted by youtube, not us
         - login information (username,password,cookie cache,etc.)
         - ranking system(?) 
             - this is the most nebulous at the moment, but could be as
@@ -23,6 +29,9 @@ backend:
         - class schedule information uploaded by user
 
 data science:
+    - user feedback metrics / gauging how people are learning and what they need help with 
+    - repetitive questions (TAs always asked the same thing) 
+        - aggregation? FAQs? 
 
 implementation:
     - knowing that the success of our website relies on engagement from
@@ -30,3 +39,27 @@ implementation:
     - what times are other ed-tech resources utilized most heavily? piazza? 
         - would we expect the majority of our users to only engage prior to
           midterms / finals? 
+
+
+GOALS: 
+    - backend:
+        - alice and marcus pick a DBMS system, outline but don't implement database
+        for example: 
+
+        DATA TABLES:
+        
+        CREATE TABLE login (
+            uni VARCHAR(10)
+            ); 
+
+    - frontend:
+        - meet with nikhilesh, chenoa, ian
+            - finalize user interface ideas
+
+    - everyone: 
+        - continue reaching out to students, TAs, Profs about idea in general
+
+    - implementation:
+        - continue working on interviews
+        - look at potential competitors' designs (ones with greater degree of 
+        proximity than piazza, courseworks)
