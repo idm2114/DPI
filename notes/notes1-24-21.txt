@@ -1,0 +1,34 @@
+********* RECAP LAST WEEK *********
+
+********* CLASSES TO TARGET *********
+- middle level classes may be more viable than intro level classes
+  - econometrics, AP, intro to electrical engineering?
+  - piazza for econometrics: really bad as compared to other classes
+    - has unanswered questions
+    - not currently very usable
+
+********* WORKING WITH PROFESSORS **********
+- which professors would be good? 
+  - those who are most amenable 
+  - for now, plan on working without professor's help -- want to develop a
+    viable product prior to pitching the idea
+
+********* NEXT STEPS **********
+- follow up with stan liao for facebook -- colubmia confessions access
+- ian: create nltk folder for AP emails and send it to elisa 
+- alice: work on creating an entity-relationship diagram of database
+  structure on lucidchart
+- joe: make list of econometrics ideas that are difficult / challenging for
+  students, cross reference with list of pre-reqs 
+- nik: work on react front-end (want to develop a login page by the end of
+  this week)
+- elisa: try and save all AP emails into nltk folder
+  - want to look through AP emails to find commonalities in terms of email
+    subjects and labs / concepts that students struggle with the most
+
+- adding new members to team? 
+  - data science: pretty okay with 2 members right now
+  - implementation: would be nice to have someone else
+  - back end: would be nice to have someone else  
+  - front end: would be nice to have someone else  
+
