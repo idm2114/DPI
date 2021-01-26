@@ -1,4 +1,6 @@
 import './App.css';
+// used for making things display as loading prior to render
+import Skeleton from 'react-loading-skeleton';
 
 function App() {
   return (
