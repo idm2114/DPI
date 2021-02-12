@@ -1,18 +1,20 @@
-import './App.css';
-// used for making things display as loading prior to render
-// import Skeleton from 'react-loading-skeleton';
-// App.enable('trust proxy');
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome to empty lacuna. Soon to be great! 
-        </p>
-      </header>
-    </div>
-  );
-}
+// styles
+import './App.css';
+
+// pages
+import MainPage from "./pages";
+
+class App extends Component { 
+    render() {
+        return ( 
+        <Router> 
+            <Route path="/" component={MainPage}/>
+        </Router>
+        );
+    }
+} 
 
 export default App;
