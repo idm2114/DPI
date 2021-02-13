@@ -14,8 +14,9 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 class Enrolled(db.Model):
-	user_uni = db.Column(db.Integer, db.ForeignKey('student.uni'), primary_key=True)
-	course_number = db.Column(db.Integer, db.ForeignKey('course.call_number'), primary_key=True)
+	id = db.Column(db.Integer, primary_key=True)
+	user_uni = db.Column(db.String(12), db.ForeignKey('student.uni'), index=True)
+	course_number = db.Column(db.Integer, db.ForeignKey('course.call_number'), index=True)
 
 	semester = db.Column(db.String(8))
 	year = db.Column(db.Integer)
