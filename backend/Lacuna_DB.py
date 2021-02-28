@@ -1,6 +1,7 @@
 from flask import Flask
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.types import TypeDecorator, VARCHAR
 from sqlalchemy_utils import ChoiceType
 from flask_migrate import Migrate
 from datetime import datetime
@@ -45,6 +46,7 @@ class Student(db.Model):
 
 	courses = db.relationship("Enrolled", back_populates='students')
 	videos = db.relationship('Video', backref='author', lazy='dynamic')
+	comments = db.relationship('Comment', backref='author', lazy='dynamic')
 
 	def set_password(self, password):
 		self.password_hash = generate_password_hash(password)
@@ -68,7 +70,19 @@ class Video(db.Model):
 	def __repr__(self):
 		return '<Video {}>'.format(self.title)
 
-# class Disscussion(db.Model):
+# Still trying to figure out how an array works here
+class Comment(db.Model):
+	id = db.Column(db.Integer, primary_key=True)
+	comments = db.Column(db.Text)
+	author = db.Column(db.String(12), db.ForeignKey('student.uni'))
+
+	def __repr(self):
+		return 'Comment'.format(self.comments)
+
+class Thread(db.Model):
+	id = db.Column(db.Integer.primary_key=True)
+	thread = 
+
 # 	array of comments with user id
 
 
