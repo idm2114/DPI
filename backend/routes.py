@@ -1,6 +1,6 @@
 from Lacuna_DB import app, Student, Video, Course, Enrolled
 from flask import render_template, redirect, url_for, request
-from flask import current_user, login_user, logout_user, login_required
+from flask_login import current_user, login_user, logout_user, login_required
 
 @app.route('/')
 @app.route('/index')
@@ -49,7 +49,7 @@ def user():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
 	if request.method == 'POST':
-		student = Student(uni=request.form['uni'], name='alice', lastname=request.form['lastname'], email=request.form['email'], school=request.form['school'])
+		student = Student(uni=request.form['uni'], name=request.form['name'], lastname=request.form['lastname'], email=request.form['email'], school=request.form['school'])
 		student.set_password(request.form['password'])
 		db.session.add(student)
 		db.session.commit()
