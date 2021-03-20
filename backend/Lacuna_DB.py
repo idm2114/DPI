@@ -1,17 +1,25 @@
 from flask import Flask
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.types import TypeDecorator, VARCHAR
 from sqlalchemy_utils import ChoiceType
 from flask_migrate import Migrate
 from datetime import datetime
+from flask_login import LoginManager, UserMixin
 import os
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'test.db')
+app.secret_key = '70ef672af6c6961c5930c13ad67efefa'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+login.login_view = 'login'
+
 
 class Enrolled(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
@@ -35,7 +43,7 @@ class Course(db.Model):
 	def __repr__(self):
 		return '<Course {}>'.format(self.course_name)
 
-class Student(db.Model):
+class Student(db.Model, UserMixin):
 	uni = db.Column(db.String(12), primary_key=True)
 	password_hash = db.Column(db.String(128))
 	name = db.Column(db.String(64))
@@ -45,6 +53,7 @@ class Student(db.Model):
 
 	courses = db.relationship("Enrolled", back_populates='students')
 	videos = db.relationship('Video', backref='author', lazy='dynamic')
+	comments = db.relationship('Comment', backref='author', lazy='dynamic')
 
 	def set_password(self, password):
 		self.password_hash = generate_password_hash(password)
@@ -68,13 +77,20 @@ class Video(db.Model):
 	def __repr__(self):
 		return '<Video {}>'.format(self.title)
 
-# class Disscussion(db.Model):
-# 	array of comments with user id
+# Still trying to figure out how an array works here
+class Comment(db.Model):
+	id = db.Column(db.Integer, primary_key=True)
+	comments = db.Column(db.Text)
+	author = db.Column(db.String(12), db.ForeignKey('student.uni'))
 
+	def __repr(self):
+		return 'Comment'.format(self.comments)
 
-# from Lacuna_DB import db, Video, Student, Course, Enrolled
-# db.create_all()
-# u = Student(uni="yc3877", password_hash='lala', name='alice', lastname='alice', email='yc3877@columbia.edu', school='SEAS')
-# v = Video(link="examplelink.com", title="example video", description="This is a example video", author_uni="yc3877", course_id="13778")
-# e = Enrolled(semester='Spring', year=2021)
-# c = Course(call_number=13778, course_name="ECON", professor="gulati")
+class Thread(db.Model):
+	id = db.Column(db.Integer, primary_key=True)
+
+@login_manager.user_loader
+def load_user(user_uni):
+	return Student.query.get(user_uni)
+
+	
