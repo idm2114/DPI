@@ -1,20 +1,29 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import logo from './logo.svg';
+/* import './App.css'; */
+import NavBar from './NavBar';
+import Home from './Home';
 
-// styles
-import './App.css';
+import { 
+    BrowserRouter as Router,
+    Switch,
+    Route, 
+    Link
+    } from "react-router-dom";
 
-// pages
-import MainPage from "./pages";
+export default function App() {
+    const [currentTime, setCurrentTime] = useState(0);
 
-class App extends Component { 
-    render() {
-        return ( 
-        <Router> 
-            <Route path="/" component={MainPage}/>
-        </Router>
-        );
-    }
-} 
+    useEffect(() => {
+        fetch('http://lacuna.columbiadpi.com/api/test').then(res => res.json()).then(data => {
+            setCurrentTime(data.test);
+        });
+    }, []);
+    
+    return (
+    <div>
+        <Home />
+    </div>
+    );
+}
 
-export default App;
