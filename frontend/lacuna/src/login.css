@@ -1,0 +1,11 @@
+.header {
+    padding-top: 10vh;
+    text-align: center; 
+}
+
+.login {
+    padding-top: 20vh;
+    align: center;
+    padding-left: 30vw;
+    padding-right: 30vw;
+}

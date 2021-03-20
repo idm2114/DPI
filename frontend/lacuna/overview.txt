@@ -1,0 +1,6 @@
+## PAGE STRUCTURE ##
+
+/landing
+/login
+    \__ /home
+

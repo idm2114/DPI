@@ -1,17 +1,29 @@
-import './App.css';
-// used for making things display as loading prior to render
-import Skeleton from 'react-loading-skeleton';
+import React, { useState, useEffect } from "react";
+import logo from './logo.svg';
+/* import './App.css'; */
+import NavBar from './NavBar';
+import Home from './Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome to empty lacuna. Soon to be great! 
-        </p>
-      </header>
+import { 
+    BrowserRouter as Router,
+    Switch,
+    Route, 
+    Link
+    } from "react-router-dom";
+
+export default function App() {
+    const [currentTime, setCurrentTime] = useState(0);
+
+    useEffect(() => {
+        fetch('http://lacuna.columbiadpi.com/api/test').then(res => res.json()).then(data => {
+            setCurrentTime(data.test);
+        });
+    }, []);
+    
+    return (
+    <div>
+        <Home />
     </div>
-  );
+    );
 }
 
-export default App;
